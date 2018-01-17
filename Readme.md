@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ольга Борисюк](https://up.htmlacademy.ru/adaptive/13/user/628091).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Пономарёва](hhttps://htmlacademy.ru/profile/id153610).
 
 ---
 
