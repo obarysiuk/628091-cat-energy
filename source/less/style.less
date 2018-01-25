@@ -1,51 +1,35 @@
-@green:#68b738;
-@grey:#f2f2f2;
-@lighttext:#444444;
-@bordergrey:#d9d9d9;
-@darktext:#111111;
-
-@font-face {
-  font-family: Oswald;
-  src: url('../fonts/oswaldregular.woff');
-  src: url('../fonts/oswaldregular.woff2');
-}
-
-@import 'reset.less';
-@import 'page-header.less';
-@import 'jumbo.less';
-@import 'button.less';
-@import 'catalog-covers';
-@import 'catalog-cover';
-@import 'features';
-@import 'case-study';
-@import 'footer';
-@import 'address-block';
-@import 'social.less';
-@import 'copyright';
-@import 'catalog-page';
-@import 'catalog';
-@import 'pagination';
-@import 'banner';
 
 
 
-h1 {
-  font-size:36px;
-}
 
-p {
-  font-size:14px;
-  line-height: 1.4em;
-  color:@lighttext;
-}
+@import 'utils/variables.less';
 
-a {
-  text-transform: uppercase;
-}
+@import 'base/reset.less';
+@import 'base/typography';
 
-.visually-hidden {
-  display: none;
-}
+@import 'components/page-header.less';
+@import 'components/jumbo.less';
+@import 'components/button.less';
+@import 'components/catalog-covers';
+@import 'components/catalog-cover';
+@import 'components/features';
+@import 'components/case-study';
+@import 'components/footer';
+@import 'components/address-block';
+@import 'components/social.less';
+@import 'components/copyright';
+@import 'components/catalog';
+@import 'components/pagination';
+@import 'components/banner';
+
+@import 'pages/form-page';
+@import 'pages/catalog-page';
+
+
+
+
+
+
 
 
 
