@@ -1,49 +1,47 @@
-@media screen and (min-width: 320px) {
-  .catalog {
-    .catalog__item {
-      margin-bottom: 10px;
+.catalog {
+  .catalog__item {
+    margin-bottom: 10px;
+  }
+
+  .catalog__item-container {
+    display: flex;
+    padding-top: 16px;
+  }
+
+  .catalog__item-info {
+    width: 100%;
+    max-width: 320px;
+    padding: 17px 0 22px 0;
+
+    &--additional {
+      padding: 7px 0 13px 0;
     }
+  }
 
-    .catalog__item-container {
-      display: flex;
-      padding-top: 16px;
+  .catalog__item-title {
+    font-size: 16px;
+    text-transform: uppercase;
+
+    &--additional {
+      margin-bottom: 6px;
     }
+  }
 
-    .catalog__item-info {
-      width: 100%;
-      max-width: 320px;
-      padding: 17px 0 22px 0;
+  .catalog__item-name {
+    font-size: 16px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 5px;
+  }
 
-      &--additional {
-        padding: 7px 0 13px 0;
-      }
-    }
+  .catalog__item-details {
+    font-size: 12px;
+    color: @lighttext;
+    width: 100%;
+    border-collapse: collapse;
 
-    .catalog__item-title {
-      font-size: 16px;
-      text-transform: uppercase;
-
-      &--additional {
-        margin-bottom: 6px;
-      }
-    }
-
-    .catalog__item-name {
-      font-size: 16px;
-      text-transform: uppercase;
-      display: block;
-      margin-bottom: 5px;
-    }
-
-    .catalog__item-details {
-      font-size: 12px;
-      color: @lighttext;
-      width: 100%;
-      border-collapse: collapse;
-
-      td:last-of-type {
-        text-align: right;
-      }
+    td:last-of-type {
+      text-align: right;
     }
   }
 }
