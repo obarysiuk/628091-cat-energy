@@ -45,3 +45,31 @@
     }
   }
 }
+
+@media (min-width: 768px) {
+  .catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .catalog__item {
+      background-color: @grey;
+      width: 249px;
+      padding: 30px;
+      margin-bottom: 40px;
+
+      &--white {
+        background-color: white;
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .catalog {
+    .catalog__item {
+      width: 171px;
+      padding: 37px;
+    }
+  }
+}

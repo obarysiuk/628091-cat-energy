@@ -1,17 +1,15 @@
 .button {
   text-transform: uppercase;
-  font-size: 14px;
-  padding: 10px;
-  display: block;
+  font-size: 16px;
   text-align: center;
-
-  &--primary {
-    color: white;
-    background-color: #68b738;
-  }
+  padding: 10px 20px;
+  display: block;
+  color: white;
+  background-color: #68b738;
 
   &--secondary {
     background-color: @grey;
+    color: @lighttext;
     font-size: 16px;
   }
 
@@ -20,5 +18,13 @@
     border: none;
     width: 100%;
     font-family: inherit;
+  }
+}
+
+@media (min-width: 768px) {
+  .button {
+    &--input {
+      width: 284px;
+    }
   }
 }

@@ -13,23 +13,23 @@
   <header class="page-header">
     <a class="logo page-header__logo">logo</a>
     <a class="brand-name page-header__brand-name" href="#">cat energy</a>
+    <button class="page-header__btn" type="button">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" class="b-header__btn-icon">
+        <path d="M3,21H28v2H3Zm0-7H28v2H3ZM3,7H28V9H3Z"></path>
+      </svg>
+    </button>
     <nav class="main-nav page-header__main-nav">
       <ul class="main-nav__list">
         <li class="main-nav__item main-nav__item--active">
-          <a href="index.html">Главная</a>
+          <a>Главная</a>
         </li>
         <li class="main-nav__item">
-          <a>Каталог продукции</a>
+          <a href="catalog.html">Каталог продукции</a>
         </li>
         <li class="main-nav__item">
-          <a href="form.html">Подобрать программу</a>
+          <a href="form.html">Подбор программы</a>
         </li>
       </ul>
-      <button class="main-nav__btn" type="button">
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" class="b-header__btn-icon">
-          <path d="M3,21H28v2H3Zm0-7H28v2H3ZM3,7H28V9H3Z"></path>
-        </svg>
-      </button>
     </nav>
   </header>
 
@@ -59,11 +59,8 @@
             </table>
           </div>
         </div>
-        <a class="button button--primary">Заказать</a>
+        <a class="button">Заказать</a>
       </li>
-
-
-
       <li class="catalog__item">
         <div class="catalog__item-container">
           <img class="catalog__item-img" src="img/chicken-small-mobile@1x.jpg" alt="">
@@ -86,7 +83,7 @@
             </table>
           </div>
         </div>
-        <a class="button button--primary">Заказать</a>
+        <a class="button">Заказать</a>
       </li>
       <li class="catalog__item">
         <div class="catalog__item-container">
@@ -110,7 +107,7 @@
             </table>
           </div>
         </div>
-        <a class="button button--primary">Заказать</a>
+        <a class="button">Заказать</a>
       </li>
       <li class="catalog__item">
         <div class="catalog__item-container">
@@ -134,7 +131,7 @@
             </table>
           </div>
         </div>
-        <a class="button button--primary">Заказать</a>
+        <a class="button">Заказать</a>
       </li>
 
       <li class="catalog__item">
@@ -159,7 +156,7 @@
             </table>
           </div>
         </div>
-        <a class="button button--primary">Заказать</a>
+        <a class="button">Заказать</a>
 
       </li>
 
@@ -185,7 +182,7 @@
             </table>
           </div>
         </div>
-        <a class="button button--primary">Заказать</a>
+        <a class="button">Заказать</a>
       </li>
 
       <li class="catalog__item">
@@ -210,14 +207,13 @@
             </table>
           </div>
         </div>
-        <a class="button button--primary">Заказать</a>
-
+        <a class="button">Заказать</a>
       </li>
 
-      <li class="pagination">
+      <li class="catalog__item catalog__item--white  pagination">
         <a class="pagination__show-more-button" href="#" alt="">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-            y="0px" viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;" xml:space="preserve" width="30" height="30">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;" xml:space="preserve" width="30" height="30">
             <style type="text/css">
               .st0 {
                 fill: #d3d3d3;
@@ -233,83 +229,88 @@
     </ul>
 
     <h2 class="additional-product__title title-underline">Дополнительные товары</h2>
+    <div class="catalog-page__additional-container">
+      <ul class="catalog-additional">
+        <li class="catalog-additional__item">
+          <div class="catalog-additional__item-info">
+            <h3 class="catalog-additional__item-title">Сахарозаменитель</h3>
+            <table class="catalog-additional__item-details">
+              <tr>
+                <td>1 Упаковка</td>
+                <td>100 Р.</td>
+              </tr>
+            </table>
+          </div>
+          <a class="button catalog-additional__button">Заказать</a>
+        </li>
+        <li class="catalog-additional__item">
+          <div class="catalog-additional__item-info ">
+            <h3 class="catalog-additional__item-title">Питьевая вода</h3>
+            <table class="catalog-additional__item-details">
+              <tr>
+                <td>5 литров</td>
+                <td>50 Р.</td>
+              </tr>
+            </table>
+          </div>
+          <a class="button catalog-additional__button">Заказать</a>
 
-    <ul class="catalog">
-      <li class="catalog__item catalog__item--additional">
-        <div class="catalog__item-info catalog__item-info--additional">
-          <h3 class="catalog__item-title catalog__item-title--additional">Сахарозаменитель</h3>
-          <table class="catalog__item-details">
-            <tr>
-              <td>1 Упаковка</td>
-              <td>100 Р.</td>
-            </tr>
-          </table>
-        </div>
-        <a class="button button--primary">Заказать</a>
-      </li>
-      <li class="catalog__item catalog__item--additional">
-        <div class="catalog__item-info catalog__item-info--additional">
-          <h3 class="catalog__item-title catalog__item-title--additional">Питьевая вода</h3>
-          <table class="catalog__item-details">
-            <tr>
-              <td>5 литров</td>
-              <td>50 Р.</td>
-            </tr>
-          </table>
-        </div>
-        <a class="button button--primary">Заказать</a>
+        </li>
+        <li class="catalog-additional__item">
+          <div class="catalog-additional__item-info">
+            <h3 class="catalog-additional__item-title">Молоко</h3>
+            <table class="catalog-additional__item-details">
+              <tr>
+                <td>1 литр</td>
+                <td>100 Р.</td>
+              </tr>
+            </table>
+          </div>
+          <a class="button catalog-additional__button">Заказать</a>
+        </li>
 
-      </li>
-      <li class="catalog__item catalog__item--additional">
-        <div class="catalog__item-info catalog__item-info--additional">
-          <h3 class="catalog__item-title catalog__item-title--additional">Молоко</h3>
-          <table class="catalog__item-details">
-            <tr>
-              <td>1 литр</td>
-              <td>100 Р.</td>
-            </tr>
-          </table>
-        </div>
-        <a class="button button--primary">Заказать</a>
-      </li>
+        <li class="catalog-additional__item">
+          <div class="catalog-additional__item-info">
+            <h3 class="catalog-additional__item-title">Витамины</h3>
+            <table class="catalog-additional__item-details">
+              <tr>
+                <td>1 упаковка (30 г)</td>
+                <td>300 Р.</td>
+              </tr>
+            </table>
+          </div>
+          <a class="button catalog-additional__button">Заказать</a>
+        </li>
 
-      <li class="catalog__item catalog__item--additional">
-        <div class="catalog__item-info catalog__item-info--additional">
-          <h3 class="catalog__item-title catalog__item-title--additional">Витамины</h3>
-          <table class="catalog__item-details">
-            <tr>
-              <td>1 упаковка (30 г)</td>
-              <td>300 Р.</td>
-            </tr>
-          </table>
-        </div>
-        <a class="button button--primary">Заказать</a>
-      </li>
+      </ul>
 
-    </ul>
+      <section class="banner banner--small">
+        <img src="http://placehold.it/55x60" alt="" class="icon">
+        <p class="banner__text">Закажите все
+          <br>и получите чехол для
+          <br> кота в подарок!</p>
+      </section>
+    </div>
 
-    <section class="banner">
-      <img src="http://placehold.it/55x60" alt="" class="icon">
-      <p class="banner__text">Закажите все
-        <br>и получите чехол для
-        <br> кота в подарок!</p>
-    </section>
   </main>
+
 
   <footer class="page-footer">
     <div class="page-footer__address-block address-block">
-      <h4 class="address-block__title">приглашаем к сотрудничеству дилеров!</h4>
-      <address class="address-block__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      <div class="address-block__wrapper">
+        <h4 class="address-block__title">приглашаем к сотрудничеству дилеров!</h4>
+        <address class="address-block__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      </div>
+
     </div>
 
     <div id="map">
       <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14121.215946950684!2d-82.63213735!3d27.76960615!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1516384361540"
         width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
-
-    <a href="#" class="footer__brand-name">catenergy</a>
-    <div class="footer__wrapper">
-      <div class="footer__social social">
+    <div class="page-footer__bottom-wrapper">
+      <a href="#" class="footer__brand-name">catenergy</a>
+      <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
             <a href="#" class="social__link social__link--vk">vk</a>
@@ -323,11 +324,13 @@
         </ul>
       </div>
 
-      <div class="footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+
+      <div class="page-footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTMLAcademy</a>
         <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__logo">logo</a>
       </div>
     </div>
+
   </footer>
 </body>
 
