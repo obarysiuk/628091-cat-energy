@@ -1,10 +1,42 @@
+.catalog-page__additional-container {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.catalog-additional {
+  margin-bottom:40px;
+}
+
+.catalog-additional__item {
+  padding-top: 8px;
+  border-top: 1px solid @bordergrey;
+  padding-bottom: 18px;
+}
+
+.catalog-additional__item-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.catalog-additional__item-details {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: @lighttext;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.catalog-additional__item-details td:last-of-type {
+  text-align: right;
+}
+
 @media (min-width: 768px) {
   .catalog-additional {
-    margin-bottom: 55px;
+    margin-bottom: 69px;
   }
 
   .catalog-additional__item {
-    padding: 38px 25px;
+    padding: 20px 35px 27px 39px;
     border-top: 1px solid @bordergrey;
     border-right: 1px solid @bordergrey;
     border-left: 1px solid @bordergrey;
@@ -12,6 +44,27 @@
     &:last-child {
       border-bottom: 1px solid @bordergrey;
     }
+  }
+
+  .catalog-additional__item-title {
+    font-size: 20px;
+    margin-bottom: 22px;
+  }
+
+  .catalog-additional__item-details {
+    font-size: 16px;
+    width: 230px;
+    padding-top: 6px;
+
+  }
+
+  .catalog-additional__item-details td:last-of-type {
+    text-align: right;
+    width: 90px;
+  }
+
+  .catalog-additional__item-details td:first-of-type {
+    text-align: right;
   }
 
   .catalog-additional__item-info {
@@ -22,7 +75,16 @@
 
 @media (min-width: 1440px) {
   .catalog-additional {
-    margin-bottom: 0;
+    margin-bottom: 69px;
+  }
+
+  .catalog-additional__title {
+    margin-top: -69px;
+    margin-left: -43px;
+  }
+
+  .catalog-page__additional-container {
+    margin: 0;
   }
 
   .catalog-additional__item {
@@ -32,8 +94,21 @@
     width: 895px;
     border-right: 0;
     border-left: 0;
-    padding: 20px 0;
+    padding: 18px 0 0 0;
     margin-right: 60px;
+  }
+//
+  .catalog-additional__item-title {
+    font-size: 20px;
+    margin-bottom: 22px;
+  }
+//
+  .catalog-additional__item-details {
+    width: 290px;
+  }
+
+  .catalog-additional__item-details td:first-of-type {
+    text-align: left;
   }
 
   .catalog-additional__item-info {
