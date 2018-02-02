@@ -21,6 +21,15 @@
     font-size: 16px;
   }
 
+  &--secondary:hover {
+    background-color: #ebebeb;
+  }
+
+  &--secondary:active {
+    color: @activegrey;
+    background-color: #ebebeb;
+  }
+
   &--input {
     font-size: 16px;
     border: none;
@@ -38,6 +47,15 @@
 
     &--input {
       width: 284px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .button {
+    &--input {
+      font-size: 20px;
+      width: 570px;
     }
   }
 }

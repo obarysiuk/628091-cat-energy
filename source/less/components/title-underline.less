@@ -1,0 +1,46 @@
+.title-underline::before,
+.title-underline::after,
+.title-underline--wrapping::after {
+  content: "";
+  background-color: @green;
+  display: inline-block;
+  height: 3px;
+  width: 100%;
+  vertical-align: middle;
+  position: relative;
+}
+
+.title-underline::before {
+  right: 1.1em;
+  margin-left: -100%;
+}
+
+.title-underline::after {
+  left: 1.1em;
+  margin-right: -100%;
+}
+
+.title-underline--wrapping::after {
+  left: 2.1em;
+  top: -25px;
+}
+
+@media (min-width: 768px) {
+  .title-underline--wrapping {
+    br {
+      display: none;
+    }
+  }
+
+  .title-underline--wrapping::after {
+    left: 1.1em;
+    top: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .title-underline {
+    position: relative;
+    overflow: hidden;
+  }
+}
