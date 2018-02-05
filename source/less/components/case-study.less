@@ -110,7 +110,7 @@
 
   .case-study__title {
     font-size: 60px;
-    margin-top: -32px;
+    margin-top: 0;
     padding-top: 8px;
     margin-bottom: 50px;
   }
@@ -119,6 +119,10 @@
     font-size: 16px;
     line-height: 1.5em;
     margin-bottom: 53px;
+
+    br {
+      display: none;
+    }
   }
 
   .case-study__metrics-blocks {
@@ -158,16 +162,22 @@
     }
   }
 
+  .case-study__spending-price {
+    display: block;
+  }
+
   .case-study__img-block {
     background-color: @grey;
     text-align: center;
+    padding-left: 12px;
     padding-bottom: 70px;
     margin-top: 254px;
   }
 
   .case-study__img {
-    width: 680px;
-    margin-top: -163px;
+    width: 690px;
+    padding-bottom: 22px;
+    margin-top: -169px;
     margin-bottom: -13px;
   }
 
@@ -175,7 +185,7 @@
     justify-content: flex-start;
     width: 608px;
     margin: 0 auto;
-    padding-left: 40px;
+    padding-left: 24px;
   }
 
   .case-study__progress-bar {
@@ -192,7 +202,7 @@
     border: none;
     border-radius: 50%;
     margin-top: -2px;
-    margin-left: 48%;
+    margin-left: 50%;
     box-shadow: 0 0 0 12px white, 0 1px 2px 13px #cdcdcd;
   }
 
@@ -228,7 +238,7 @@
 
   .case-study__wrapper {
     padding-left: 0;
-    padding-right: 90px;
+    padding-right: 128px;
     margin: 0 0 0 110px;
   }
 
@@ -251,8 +261,8 @@
   }
 
   .case-study__metrics-block {
-    width: 162px;
-    margin-bottom: 56px;
+    width: 160px;
+    margin-bottom: 55px;
   }
 
   .case-study__tagline {
@@ -265,11 +275,21 @@
   }
 
   .case-study__spending-price {
-    padding-left: 64px;
+    padding-left: 59px;
+    display: inline-block;
   }
 
   .case-study__img-block {
     margin-top: 0;
-    margin-right: 87px;
+    margin-right: 69px;
+  }
+
+  .case-study__img {
+    margin-top: -191px;
+    margin-bottom: 10px;
+  }
+
+  .case-study__progress {
+    padding-left: 74px;
   }
 }

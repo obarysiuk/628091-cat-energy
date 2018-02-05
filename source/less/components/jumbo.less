@@ -5,7 +5,11 @@
   background-size: cover;
   height: 278px;
   padding-top: 27px;
-  margin-bottom: 200px;
+  margin-bottom: 197px;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
 }
 
 .jumbo__wrapper {
@@ -15,19 +19,22 @@
 
 .jumbo__title {
   line-height: 1em;
-  margin: 0 0 22px 0;
+  margin: 0 0 23px 0;
 }
 
 .jumbo__slogan {
   font-family: inherit;
   font-size: 14px;
   text-transform: uppercase;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
   color: white;
 }
 
 .jumbo__button {
   font-size: 14px;
+  padding-top: 12px;
+  padding-bottom: 14px;
+  line-height: 0.9em;
 }
 
 @media (min-width: 768px) {
@@ -35,6 +42,7 @@
     background-size: 0;
     color: @darktext;
     text-align: left;
+    padding-top: 29px;
     margin-bottom: 532px;
   }
 
@@ -65,7 +73,7 @@
 
   .jumbo__button {
     font-size: 20px;
-    padding: 10px 25px;
+    padding: 16px 29px 16px 25px;
     order: 3;
     z-index: 1;
   }
@@ -76,15 +84,23 @@
     position: absolute;
 
     top: 200px;
-    left: 80px;
+    left: 0;
     z-index: 0;
   }
 }
 
 @media (min-width: 1440px) {
   .jumbo {
-    padding-top: 73px;
-    margin-bottom: 255px;
+    background: url("../img/index-background-desktop@1x.jpg") no-repeat 105% 0%;
+    background-size: 50%;
+    height: 474px;
+    padding-top: 222px;
+    margin-top: -150px;
+    margin-bottom: 60px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
   }
 
   .jumbo__wrapper {
@@ -102,9 +118,9 @@
   }
 
   .jumbo__img {
-    width: 521px;
-    height: 490px;
-    top: -26%;
-    left: 73%;
+    width: 552px;
+    height: 499px;
+    top: -28%;
+    left: 69%;
   }
 }
