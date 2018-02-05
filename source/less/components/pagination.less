@@ -3,7 +3,7 @@
 }
 
 .pagination__show-more-button {
-  margin-top: 20px;
+  margin-top: 25px;
   display: block;
 }
 
@@ -21,6 +21,7 @@
 @media (min-width: 768px) {
   .pagination {
     outline: 1px solid @bordergrey;
+    width: 247px;
     display: flex;
     flex-direction: column;
 
@@ -37,7 +38,7 @@
   }
 
   .pagination__show-more-button {
-    margin-bottom: 45px;
+    margin-bottom: 39px;
 
     svg {
       width: 60px;
@@ -49,5 +50,20 @@
     font-size: 16px;
     width: 180px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: 1440px) {
+  .pagination {
+    width: 170px;
+  }
+
+  .pagination__show-more-button {
+    margin-top: 43px;
+    margin-bottom: 17px;
+  }
+
+  .pagination__subtitle {
+    width: 167px;
   }
 }
