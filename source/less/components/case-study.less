@@ -1,94 +1,229 @@
 .case-study {
   background-color: @grey;
+}
 
-  .case-study__wrapper {
-    width: 280px;
-    margin: 0 auto;
-    padding: 20px;
-  }
+.case-study__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 20px 20px 0 20px;
+}
 
-  .case-study__title {
-    font-size: 36px;
-    margin-bottom: 25px;
-  }
+.case-study__title {
+  font-size: 36px;
+  margin-bottom: 27px;
+}
 
-  .case-study__text {
-    margin-bottom: 20px;
-  }
+.case-study__text {
+  margin-bottom: 25px;
+}
 
-  .case-study__metrics-blocks {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+.case-study__img {
+  width: 100%;
+  padding-bottom: 25px;
+}
 
-  .case-study__img {
-    width: 100%;
-  }
+.case-study__metrics-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
 
-  .case-study__metrics-block {
-    text-align: center;
-    margin-bottom: 25px;
-    border: 1px solid @bordergrey;
-  }
+.case-study__metrics-block {
+  text-align: center;
+  width: 123px;
+  border: 1px solid @bordergrey;
+  border-radius: 3px;
+  padding-top: 10px;
+  margin-bottom: 35px;
+}
 
-  .case-study__metrics {
-    font-size: 24px;
-    text-transform: uppercase;
-  }
+.case-study__metrics {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: "Oswald", "Lucida Grande", sans-serif;
+  margin-bottom: 5px;
+}
 
-  .case-study__spending {
-    text-transform: uppercase;
-    margin: 0 auto;
-  }
+.case-study__tagline {
+  line-height: 1.1em;
+  font-size: 12px;
+  background-color: @grey;
+  color: @lighttext;
+  padding: 0 2px;
+  margin-bottom: -18px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
 
-  .case-study__progress {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.case-study__spending {
+  text-transform: uppercase;
+  font-family: inherit;
+  margin: 0 auto;
+
+  br {
+    display: none;
   }
+}
+
+.case-study__img-block {
+  padding-bottom: 35px;
+}
+
+.case-study__progress {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.case-study__progress-bar {
+  align-self: center;
+  margin: 0 16px;
+  width: 84px;
+  border: 1px solid @bordergrey;
+  border-radius: 8px;
+}
+
+.case-study__progress-bar-value {
+  background-color: @green;
+  width: 29px;
+  padding: 3px;
+  margin: 3px 9px;
+  border-radius: 5px;
+}
+
+.case-study__progress-point {
+  color: inherit;
 }
 
 @media (min-width: 768px) {
   .case-study {
     margin: 0 auto;
     background: transparent;
+    border-top: 1px solid @bordergrey;
+  }
 
-    .case-study__wrapper {
-      width: 708px;
-      margin: 0 auto;
+  .case-study__wrapper {
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  .case-study__title {
+    font-size: 60px;
+    margin-top: 0;
+    padding-top: 8px;
+    margin-bottom: 50px;
+  }
+
+  .case-study__text {
+    font-size: 16px;
+    line-height: 1.5em;
+    margin-bottom: 53px;
+
+    br {
+      display: none;
+    }
+  }
+
+  .case-study__metrics-blocks {
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .case-study__metrics-block {
+    width: 160px;
+    padding-top: 13px;
+    margin-right: 42px;
+    margin-bottom: 0;
+  }
+
+  .case-study__metrics {
+    font-size: 30px;
+    margin-bottom: 11px;
+  }
+
+  .case-study__tagline {
+    font-size: 14px;
+    background-color: white;
+    margin-bottom: -7px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .case-study__spending {
+    font-size: 20px;
+    margin-left: auto;
+    align-items: baseline;
+    text-align: right;
+    flex-grow: 1;
+
+    br {
+      display: block;
+    }
+  }
+
+  .case-study__spending-price {
+    display: block;
+  }
+
+  .case-study__img-block {
+    background-color: @grey;
+    text-align: center;
+    padding-left: 12px;
+    padding-bottom: 70px;
+    margin-top: 254px;
+  }
+
+  .case-study__img {
+    width: 690px;
+    padding-bottom: 22px;
+    margin-top: -169px;
+    margin-bottom: -13px;
+  }
+
+  .case-study__progress {
+    justify-content: flex-start;
+    width: 608px;
+    margin: 0 auto;
+    padding-left: 24px;
+  }
+
+  .case-study__progress-bar {
+    background-color: @bordergrey;
+    width: 425px;
+    height: 4px;
+    margin: 0 23px;
+  }
+
+  .case-study__progress-bar-value {
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    margin-top: -2px;
+    margin-left: 50%;
+    box-shadow: 0 0 0 12px white, 0 1px 2px 13px #cdcdcd;
+  }
+
+  .case-study__progress-bar-value:hover {
+    box-shadow: 0 0 0 12px white, 0 3px 5px 13px #cdcdcd;
+  }
+
+  .case-study__progress-bar-value:active {
+    box-shadow: 0 0 0 11px white, 0 0 0 13px #68b738, 0 3px 5px 13px #cdcdcd;
+  }
+
+  .case-study__progress-point {
+    font-size: 20px;
+    border-bottom: 1px dotted @bordergrey;
+
+    &:hover {
+      border-bottom: 1px solid #989898;
     }
 
-    .case-study__metrics-blocks {
-      flex-wrap: nowrap;
-      align-items: baseline;
-    }
-
-    .case-study__metrics-block {
-      width: 160px;
-      margin-right: 50px;
-    }
-
-    .case-study__spending {
-      margin-left: auto;
-      align-items: baseline;
-      text-align: right;
-      flex-grow: 1;
-    }
-
-    .case-study__img-block {
-      background-color: @grey;
-      margin-top: 155px;
-      padding-bottom: 70px;
-    }
-
-    .case-study__img {
-      margin-top: -155px;
-    }
-
-    .case-study__progress {
-      width: 708px;
-      margin: 0 auto;
+    &:active {
+      border: none;
     }
   }
 }
@@ -98,20 +233,63 @@
     background-color: @grey;
     display: flex;
     justify-content: center;
-    margin-top: 180px;
+    margin-top: 80px;
+  }
 
-    .case-study__wrapper {
-      margin: 0 110px;
-      padding-left: 0;
-    }
+  .case-study__wrapper {
+    padding-left: 0;
+    padding-right: 128px;
+    margin: 0 0 0 110px;
+  }
 
-    .case-study__title {
-      margin-top: -125px;
-      margin-bottom: 140px;
-    }
+  .case-study__title {
+    margin-top: -178px;
+    margin-bottom: 132px;
+  }
 
-    .case-study__img-block {
-      margin-top: 0;
-    }
+  .case-study__text {
+    margin-bottom: 68px;
+  }
+
+  .case-study__metrics {
+    flex-wrap: wrap;
+  }
+
+  .case-study__metrics-blocks {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .case-study__metrics-block {
+    width: 160px;
+    margin-bottom: 55px;
+  }
+
+  .case-study__tagline {
+    background-color: @grey;
+  }
+
+  .case-study__spending {
+    width: 370px;
+    text-align: left;
+  }
+
+  .case-study__spending-price {
+    padding-left: 59px;
+    display: inline-block;
+  }
+
+  .case-study__img-block {
+    margin-top: 0;
+    margin-right: 69px;
+  }
+
+  .case-study__img {
+    margin-top: -191px;
+    margin-bottom: 10px;
+  }
+
+  .case-study__progress {
+    padding-left: 74px;
   }
 }
