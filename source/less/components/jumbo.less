@@ -3,8 +3,8 @@
   text-align: center;
   background: url("../img/index-background-mobile@1x.jpg") no-repeat center;
   background-size: cover;
-  height: 278px;
-  padding-top: 27px;
+  height: 280px;
+  padding-top: 25px;
   margin-bottom: 197px;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -26,15 +26,15 @@
   font-family: inherit;
   font-size: 14px;
   text-transform: uppercase;
-  margin-bottom: 26px;
+  margin-bottom: 25px;
   color: white;
 }
 
 .jumbo__button {
   font-size: 14px;
-  padding-top: 12px;
-  padding-bottom: 14px;
-  line-height: 0.9em;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  line-height: 18px;
 }
 
 @media (min-width: 768px) {
@@ -43,7 +43,7 @@
     color: @darktext;
     text-align: left;
     padding-top: 29px;
-    margin-bottom: 532px;
+    margin-bottom: 530px;
   }
 
   .jumbo__wrapper {
@@ -58,7 +58,7 @@
   .jumbo__title {
     font-size: 60px;
     margin-right: 60px;
-    margin-bottom: 38px;
+    margin-bottom: 42px;
     order: 1;
     z-index: 1;
   }
@@ -66,13 +66,14 @@
   .jumbo__slogan {
     font-size: 20px;
     color: @darktext;
-    margin-bottom: 42px;
+    margin-bottom: 45px;
     order: 2;
     z-index: 1;
   }
 
   .jumbo__button {
     font-size: 20px;
+    line-height: 20px;
     padding: 16px 29px 16px 25px;
     order: 3;
     z-index: 1;
@@ -91,12 +92,12 @@
 
 @media (min-width: 1300px) {
   .jumbo {
-    background: url("../img/index-background-desktop@1x.jpg") no-repeat 105% 0%;
-    background-size: 50%;
-    height: 474px;
+    background: url("../img/index-background-desktop@1x.jpg") no-repeat 106% 0%;
+    background-size: 50% 93%;
+    height: 528px;
     padding-top: 222px;
     margin-top: -150px;
-    margin-bottom: 60px;
+    margin-bottom: 7px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/index-background-desktop@2x.jpg");
@@ -109,18 +110,24 @@
   }
 
   .jumbo__title {
-    margin: 0 0 38px 0;
+    margin: 0 0 40px 0;
     max-width: 500px;
   }
 
   .jumbo__slogan {
-    margin-bottom: 50px;
+    line-height: 20px;
+    margin-bottom: 55px;
+  }
+
+  .jumbo__button {
+    padding-bottom: 15px;
+    padding-top: 15px;
   }
 
   .jumbo__img {
     width: 552px;
     height: 499px;
-    top: -28%;
-    left: 69%;
+    top: -29%;
+    left: 67%;
   }
 }
