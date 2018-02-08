@@ -3,12 +3,12 @@
   overflow: hidden;
 }
 
+
 .form-page__secondary-title {
   text-transform: none;
   line-height: 1em;
-  width: 100%;
-  padding-left: 20px;
-  margin: 27px 0;
+  width: 280px;
+  margin: 27px auto;
 }
 
 .form-page__title {
@@ -24,6 +24,11 @@
   color: @darktext;
   width: 280px;
   margin: 0 auto 38px auto;
+}
+
+.form-page__form {
+  width: 280px;
+  margin: 0 auto;
 }
 
 .form-page__fieldset-info {
@@ -91,6 +96,8 @@
   border-bottom: 1px solid @bordergrey;
   border-top: 1px solid @bordergrey;
   padding: 23px 0 4px 0;
+  margin-left: -100%;
+  margin-right: -100%;
 }
 
 .form-page__field-radio {
@@ -183,8 +190,7 @@
 
 .form-page__fieldset-checkbox {
   width: 280px;
-  padding: 10px 0 13px 0;
-  margin: 0 auto 8px auto;
+  margin: 35px auto 38px auto;
 }
 
 .form-page__field-checkbox {
@@ -271,13 +277,17 @@
     margin-left: 70px;
   }
 
+  .form-page__form {
+    width: 708px;
+  }
+
   .form-page__data-container {
     margin-bottom: 68px;
   }
 
   .form-page__fieldset-info {
     width: 628px;
-    margin: 0 auto 0 70px;
+    margin: 0 auto;
   }
 
   .form-page__field-text {
@@ -305,7 +315,15 @@
   }
 
   .form-page__fieldset-comment {
-    width: 100%;
+    width: 628;
+    margin: 77px auto 0 auto;
+  }
+
+  .form-page__textarea {
+    font-size: 20px;
+    width: 612px;
+    height: 160px;
+    padding-left: 17px;
   }
 
   .form-page__fieldset-radio {
@@ -313,7 +331,8 @@
     border: 1px solid @bordergrey;
     border-right: 0;
     padding: 28px 0 8px 28px;
-    margin-left: 72px;
+    margin-left: 40px;
+    margin-right: -100%;
     margin-top: 72px;
   }
 
@@ -348,25 +367,16 @@
 
   .form-page__secondary-title {
     font-size: 36px;
-    width: 100%;
-    padding-left: 70px;
-    margin: 62px 0;
+    width: 628px;
+    margin: 62px auto;
   }
 
   .form-page__fieldset-contact {
     width: 630px;
-    margin: 75px auto 65px 70px;
+    margin: 75px auto 65px auto;
   }
 
-  .form-page__textarea {
-    font-size: 20px;
-    width: 611px;
-    height: 160px;
-    padding-left: 17px;
-    margin-top: 15px;
-    margin-left: 70px;
-    margin-bottom: 0;
-  }
+
 
   .form-page__fieldset-checkbox {
     display: flex;
@@ -374,7 +384,6 @@
     justify-content: space-between;
     width: 630px;
     padding: 0;
-    margin-left: 70px;
     margin-bottom: 20px;
   }
 
@@ -404,7 +413,6 @@
     display: flex;
     align-items: baseline;
     width: 630px;
-    margin-left: 70px;
     margin-bottom: 56px;
   }
 
@@ -418,7 +426,8 @@
 }
 
 @media (min-width: 1300px) {
-  .form-page-form {
+  .form-page__form {
+    width: 1220px;
     margin-bottom: 68px;
   }
 
@@ -488,7 +497,6 @@
 
   .form-page__secondary-title {
     margin: 43px 0;
-    padding-left: 40px;
   }
 
   .form-page__fieldset-comment {
