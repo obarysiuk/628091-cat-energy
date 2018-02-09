@@ -18,3 +18,15 @@ if(headerNojs) {
         navToggle.classList.remove('menu-opened');
       }
     });
+
+function validateForm(form) {
+  for (var i=0; i<form.elements.length; i++) {
+    var element = form.elements[i];
+
+    element.classList.remove('form-page__input-text--error');
+
+    if (element.required && !element.value) {
+      element.classList.add('form-page__input-text--error');
+    }
+  }
+}

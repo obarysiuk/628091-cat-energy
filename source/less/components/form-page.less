@@ -3,7 +3,6 @@
   overflow: hidden;
 }
 
-
 .form-page__secondary-title {
   text-transform: none;
   line-height: 1em;
@@ -59,6 +58,10 @@
   font-size: 16px;
 }
 
+.form-page__input-text--error {
+  border: 1px solid #ff8282;
+}
+
 .form-page__mail-icon {
   position: absolute;
   top: 15px;
@@ -88,6 +91,11 @@
 .form-page__input-text:focus + .form-page__phone-icon,
 .form-page__input-text:focus + .form-page__mail-icon {
   fill: @green;
+}
+
+.form-page__input-text--error + .form-page__phone-icon,
+.form-page__input-text--error + .form-page__mail-icon {
+  fill: #ff8282;
 }
 
 // начало радио
