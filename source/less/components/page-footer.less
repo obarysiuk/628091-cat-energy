@@ -2,16 +2,18 @@
   background-color: @grey;
 }
 
-.page-footer__brand-name {
+.page-footer__brand-name-icon {
+  width: 128px;
+  height: 24px;
   display: block;
-  margin: 0 auto 27px auto;
+  margin: 0 auto 30px auto;
 }
 
-.page-footer__brand-name:hover {
+.page-footer__brand-name-icon:hover {
   opacity: 0.8;
 }
 
-.page-footer__brand-name:active {
+.page-footer__brand-name-icon:active {
   opacity: 0.3;
 }
 
@@ -30,12 +32,11 @@
 .page-footer__bottom-wrapper {
   width: 280px;
   margin: 0 auto;
-  padding: 30px 20px 0 20px;
-  text-align: center;
+  padding: 30px 20px 30px 20px;
 }
 
 .page-footer__copyright {
-  padding: 20px 0 15px 0;
+  padding: 26px 52px 0 0;
 }
 
 .page-footer__address-block--grey {
@@ -49,8 +50,16 @@
     align-items: baseline;
     justify-content: space-between;
     width: 708px;
-    padding: 45px 17px 20px 19px;
+    padding: 42px 20px 58px 20px;
     margin: 0 auto;
+  }
+
+  .page-footer__brand-name {
+    margin-bottom: 0;
+  }
+
+  .page-footer__brand-name-icon {
+    margin-bottom: 0;
   }
 
   .page-footer__social {
@@ -64,7 +73,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .page-footer {
     position: relative;
     clear: left;
@@ -72,12 +81,8 @@
 
   .page-footer__bottom-wrapper {
     width: 1220px;
-    padding-top: 42px;
-    padding-bottom: 27px;
+    padding-top: 40px;
+    padding-bottom: 55px;
     margin: 0 auto;
-  }
-
-  .page-footer__brand-name {
-    margin-bottom: 12px;
   }
 }

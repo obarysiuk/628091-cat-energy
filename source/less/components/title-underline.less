@@ -1,3 +1,7 @@
+.title-underline {
+  position: relative;
+}
+
 .title-underline::before,
 .title-underline::after,
 .title-underline--wrapping::after {
@@ -5,42 +9,53 @@
   background-color: @green;
   display: inline-block;
   height: 3px;
+  position: absolute;
+  top: 58%;
   width: 100%;
-  vertical-align: middle;
-  position: relative;
 }
 
 .title-underline::before {
-  right: 1.1em;
-  margin-left: -100%;
+  margin-left: -107%;
 }
 
 .title-underline::after {
-  left: 1.1em;
   margin-right: -100%;
+  margin-left: 22px;
+  width: 150%;
+}
+
+.title-underline--wrapping::before {
+  top: 30%;
 }
 
 .title-underline--wrapping::after {
-  left: 2.1em;
-  top: -25px;
+  margin-left: 46px;
+  top: 30%;
 }
 
 @media (min-width: 768px) {
+  .title-underline::before,
+  .title-underline::after {
+    top: 60%;
+  }
+
+  .title-underline::after {
+    margin-left: 40px;
+  }
+
   .title-underline--wrapping {
     br {
       display: none;
     }
   }
-
-  .title-underline--wrapping::after {
-    left: 1.1em;
-    top: 0;
-  }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .title-underline {
-    position: relative;
-    overflow: hidden;
+    width: 1220px;
+  }
+
+  .title-underline::before {
+    margin-left: -104%;
   }
 }
