@@ -25,14 +25,14 @@
   </svg>
 
   <header class="page-header page-header--nojs">
-    <a href="/" class="logo page-header__logo">
+    <a href="/" class="logo page-header__logo" tabindex="0">
       <picture>
         <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
         <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
         <img src="img/icon-logo-mobile.svg" width="33" height="38" alt="логотип">
       </picture>
     </a>
-    <a href="/" class="page-header__brand-name" href="#">
+    <a href="/" class="page-header__brand-name">
       <img src="img/logo-mobile-header.svg" width="101" height="18" alt="логотип">
     </a>
     <button class="page-header__btn" type="button">
@@ -53,7 +53,7 @@
           <a href="/">Главная</a>
         </li>
         <li class="main-nav__item">
-          <a href="catalog.html">Каталог продукции</a>
+          <a href="catalog.html" tabindex="1">Каталог продукции</a>
         </li>
         <li class="main-nav__item main-nav__item--active">
           <a href="form.html">Подбор программы</a>
@@ -83,7 +83,7 @@
         </div>
         <div class="form-page__fieldset-radio">
           <div class="form-page__field-radio">
-            <input class="form-page__input-radio" id="losing-weight" type="radio" name="type" value="losing-weight" checked>
+            <input class="form-page__input-radio" id="losing-weight" type="radio" name="type" value="losing-weight">
             <label class="form-page__input-radio-label" for="losing-weight">Похудение</label>
           </div>
           <div class="form-page__field-radio">
@@ -158,8 +158,7 @@
       </div>
     </div>
     <div class="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14121.215946950684!2d-82.63213735!3d27.76960615!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1516384361540"
-        width="100%" height="364" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14121.215946950684!2d-82.63213735!3d27.76960615!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1516384361540" height="364" style="border:0; width:100%" allowfullscreen></iframe>
     </div>
     <div class="page-footer__bottom-wrapper">
       <a href="/" class="page-footer__brand-name">
