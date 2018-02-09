@@ -1,7 +1,10 @@
 .jumbo {
   color: white;
   text-align: center;
-  background: url("../img/index-background-mobile@1x.jpg") no-repeat center;
+  background: url("../img/index-background-mobile@1x.jpg");
+  background-color: @green;
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   height: 280px;
   padding-top: 25px;
@@ -39,9 +42,10 @@
 
 @media (min-width: 768px) {
   .jumbo {
-    background-size: 0;
     color: @darktext;
     text-align: left;
+    background-color: transparent;
+    background-size: 0;
     padding-top: 29px;
     margin-bottom: 530px;
   }
@@ -92,7 +96,9 @@
 
 @media (min-width: 1300px) {
   .jumbo {
-    background: url("../img/index-background-desktop@1x.jpg") no-repeat 106% 0%;
+    background-image:url("../img/index-background-desktop@1x.jpg"), linear-gradient(@green);
+    background-repeat: no-repeat;
+    background-position: 106% 0%;
     background-size: 50% 93%;
     height: 528px;
     padding-top: 222px;
