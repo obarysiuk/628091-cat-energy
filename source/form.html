@@ -108,8 +108,7 @@
         </div>
         <div class="form-page__field-text">
           <label class="form-page__label-contact" for="tel">Телефон:*</label>
-          <input class="form-page__input-text" id="tel" type="tel" name="tel" placeholder="8 (960) 900-60-90"
-            required>
+          <input class="form-page__input-text" id="tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
           <svg class="form-page__phone-icon" width="20" height="20">
             <use xlink:href="#phone-icon"></use>
           </svg>
@@ -157,8 +156,7 @@
         </address>
       </div>
     </div>
-    <div class="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14121.215946950684!2d-82.63213735!3d27.76960615!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1516384361540" height="364" style="border:0; width:100%" allowfullscreen></iframe>
+    <div id="map" class="page-footer__map">
     </div>
     <div class="page-footer__bottom-wrapper">
       <a href="/" class="page-footer__brand-name">
@@ -202,6 +200,8 @@
     </div>
   </footer>
   <script src="/js/main.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvuJ9ixRv7zv7DHJtDoVIbEct4H9sOIsE&callback=initMap">
+  </script>
 </body>
 
 </html>
