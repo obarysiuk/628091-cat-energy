@@ -3,12 +3,11 @@
   overflow: hidden;
 }
 
-
 .form-page__secondary-title {
   text-transform: none;
   line-height: 1em;
   width: 280px;
-  margin: 27px auto;
+  margin: 0 auto 27px auto;
 }
 
 .form-page__title {
@@ -33,14 +32,14 @@
 
 .form-page__fieldset-info {
   width: 280px;
-  margin: 0 auto 25px auto;
+  margin: 0 auto 23px auto;
 }
 
 .form-page__field-text {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   position: relative;
 }
 
@@ -50,21 +49,24 @@
 
 .form-page__input-text {
   background-image: none;
-  line-height: 20px;
   border: 1px solid #d2d6da;
   width: 100%;
-  padding: 10px 13px 12px;
+  padding: 9px 13px 10px 15px;
   text-transform: uppercase;
   font-family: inherit;
   font-size: 16px;
 }
 
+.form-page__input-text--error {
+  border: 1px solid #ff8282;
+}
+
 .form-page__mail-icon {
   position: absolute;
-  top: 15px;
-  right: 13px;
-  width: 20px;
-  height: 20px;
+  top: 12px;
+  right: 16px;
+  width: 17px;
+  height: 18px;
 }
 
 .form-page__phone-icon {
@@ -90,14 +92,18 @@
   fill: @green;
 }
 
+.form-page__input-text--error + .form-page__phone-icon,
+.form-page__input-text--error + .form-page__mail-icon {
+  fill: #ff8282;
+}
+
 // начало радио
 
 .form-page__fieldset-radio {
   border-bottom: 1px solid @bordergrey;
   border-top: 1px solid @bordergrey;
   padding: 23px 0 4px 0;
-  margin-left: -100%;
-  margin-right: -100%;
+  margin: 0 -100px 28px -100px;
 }
 
 .form-page__field-radio {
@@ -173,7 +179,7 @@
 
 .form-page__fieldset-comment {
   width: 280px;
-  margin: 35px auto 0 auto;
+  margin: 35px auto 25px auto;
 }
 
 .form-page__textarea {
@@ -190,11 +196,12 @@
 
 .form-page__fieldset-checkbox {
   width: 280px;
-  margin: 35px auto 38px auto;
+  margin: 40px auto 41px auto;
+  line-height: 18px;
 }
 
 .form-page__field-checkbox {
-  margin-bottom: 18px;
+  margin-bottom: 24px;
 }
 
 .form-page__input-checkbox {
@@ -207,7 +214,6 @@
 .form-page__label-checkbox {
   position: relative;
   padding: 0 0 0 47px;
-  cursor: pointer;
 }
 
 .form-page__label-checkbox::before {
@@ -215,20 +221,20 @@
   position: absolute;
   top: -3px;
   left: 0;
-  width: 29px;
-  height: 29px;
+  width: 28px;
+  height: 28px;
   border: 1px solid @bordergrey;
 }
 
 .form-page__label-checkbox::after {
   content: "";
   position: absolute;
-  top: 3px;
-  left: 12px;
+  top: -1px;
+  left: 9px;
   opacity: 1;
-  width: 8px;
-  border-bottom: 2px solid @green;
-  height: 15px;
+  width: 10px;
+  border-bottom: 2px solid #68b738;
+  height: 17px;
   border-right: 2px solid @green;
   transform: rotate(45deg);
 }
@@ -262,19 +268,15 @@
   .form-page__title {
     font-size: 60px;
     line-height: 60px;
-    width: 628px;
-    padding: 0 40px;
-    margin-left: -10px;
-    margin-bottom: 55px;
-    margin-top: 29px;
+    width: 708px;
+    margin: 29px auto 55px auto;
   }
 
   .form-page__subtitle {
     font-size: 20px;
-    line-height: 1.5em;
+    line-height: 30px;
     width: 628px;
-    margin-bottom: 66px;
-    margin-left: 70px;
+    margin: 0 auto 66px auto;
   }
 
   .form-page__form {
@@ -301,12 +303,12 @@
 
   .form-page__input-text {
     font-size: 20px;
-    padding: 8px 19px 12px;
+    padding: 10px 20px 10px 20px;
   }
 
   .form-page__mail-icon {
-    top: 21px;
-    right: 15px;
+    top: 18px;
+    right: 17px;
   }
 
   .form-page__phone-icon {
@@ -368,7 +370,7 @@
   .form-page__secondary-title {
     font-size: 36px;
     width: 628px;
-    margin: 62px auto;
+    margin: 62px auto 0 auto;
   }
 
   .form-page__fieldset-contact {
@@ -382,13 +384,14 @@
     justify-content: space-between;
     width: 630px;
     padding: 0;
-    margin-bottom: 20px;
+    margin-top: 66px;
+    margin-bottom: 13px;
   }
 
   .form-page__field-checkbox {
     width: 286px;
     font-size: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 54px;
   }
 
   .form-page__label-checkbox {
@@ -426,7 +429,7 @@
 @media (min-width: 1300px) {
   .form-page__form {
     width: 1220px;
-    margin-bottom: 68px;
+    margin-bottom: 65px;
   }
 
   .form-page__title {
@@ -479,6 +482,11 @@
     width: 570px;
   }
 
+  .form-page__mail-icon {
+    top: 18px;
+    right: 21px;
+  }
+
   .form-page__phone-icon {
     right: 20px;
   }
@@ -512,14 +520,12 @@
 
   .form-page__fieldset-checkbox {
     width: 1220px;
-    margin: 0 auto;
-    margin-top: 60px;
-    margin-bottom: 28px;
+    margin: 67px auto 19px auto;
   }
 
   .form-page__submit-container {
     width: 1220px;
-    margin: 0 auto 65px auto;
+    margin: 0 auto 0 auto;
   }
 
   .form-page__legend-block {

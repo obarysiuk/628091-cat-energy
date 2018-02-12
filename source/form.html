@@ -5,27 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>Подбор программы</title>
 </head>
 
 <body>
-  <svg style="display:none">
-    <symbol viewBox="0 0 20 20" id="mail-icon">
-      <path d="M15.6,11.6H1.4V5.8H0V13h17V5.8h-1.4V11.6z M0,0v2.3l8.5,7.1L17,2.3V0H0z M15.6,1.6L8.5,7.5L1.4,1.6V1.4h14.2L15.6,1.6z"
-      />
-    </symbol>
-    <symbol viewBox="0 0 20 20" id="phone-icon">
-      <path d="M17.9,9.4H9.4v1.2h8.5l-2.1,2.1l0.9,0.9l3.1-3.1c0.2-0.2,0.2-0.6,0-0.9l-3.1-3.1l-0.9,0.9L17.9,9.4z" />
-      <path d="M8.1,19.4v-6.2c0-0.3-0.3-0.6-0.6-0.6H4.4l0,0H3.1l0,0c0,0.7,0.6,1.2,1.2,1.2h2.5v5H3.1c-1,0.1-1.8-0.7-1.9-1.7
-                    c0-0.1,0-0.1,0-0.2V3.1c0-1,0.8-1.8,1.7-1.8c0.1,0,0.1,0,0.2,0h3.7v5H4.4c-0.7,0-1.2,0.6-1.2,1.2h4.4c0.3,0,0.6-0.3,0.6-0.6V0.6
-                    C8.1,0.3,7.8,0,7.5,0H3.1C1.5-0.1,0.1,1.2,0,2.9C0,3,0,3.1,0,3.1v13.7c-0.1,1.7,1.2,3.1,2.9,3.1c0.1,0,0.2,0,0.2,0h4.4
-                    C7.8,20,8.1,19.7,8.1,19.4z" />
-    </symbol>
-  </svg>
-
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="page-header page-header--nojs">
-    <a href="/" class="logo page-header__logo" tabindex="0">
+    <a href="index.html" class="logo page-header__logo" tabindex="0">
       <picture>
         <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
         <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -50,7 +39,7 @@
     <nav class="main-nav page-header__main-nav main-nav--closed">
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a href="/">Главная</a>
+          <a href="index.html">Главная</a>
         </li>
         <li class="main-nav__item">
           <a href="catalog.html" tabindex="1">Каталог продукции</a>
@@ -73,11 +62,11 @@
             <input class="form-page__input-text" id="name" type="text" name="name" placeholder="барсик" required>
           </div>
           <div class="form-page__field-text">
-            <label class="form-page__label-text" for="weight">Вес&nbsp;&nbsp;(кг):*</label>
+            <label class="form-page__label-text" for="weight">Вес&nbsp;(кг):*</label>
             <input class="form-page__input-text" id="weight" type="number" name="weight" placeholder="7" required>
           </div>
           <div class="form-page__field-text">
-            <label class="form-page__label-text" for="name">Возраст&nbsp;&nbsp;(лет):</label>
+            <label class="form-page__label-text" for="name">Возраст&nbsp;(лет):</label>
             <input class="form-page__input-text" id="age" type="number" name="age" placeholder="7" required>
           </div>
         </div>
@@ -103,15 +92,14 @@
           <label class="form-page__label-contact" for="email">E&#8209;mail:*</label>
           <input class="form-page__input-text" id="email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
           <svg class="form-page__mail-icon" width="20" height="20">
-            <use xlink:href="#mail-icon"></use>
+            <use xlink:href="#icon-mail"></use>
           </svg>
         </div>
         <div class="form-page__field-text">
           <label class="form-page__label-contact" for="tel">Телефон:*</label>
-          <input class="form-page__input-text" id="tel" type="tel" name="tel" placeholder="8 (960) 900-60-90"
-            required>
+          <input class="form-page__input-text" id="tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
           <svg class="form-page__phone-icon" width="20" height="20">
-            <use xlink:href="#phone-icon"></use>
+            <use xlink:href="#icon-phone"></use>
           </svg>
         </div>
       </div>
@@ -139,7 +127,7 @@
         </div>
       </div>
       <div class="form-page__submit-container">
-        <input class="button button--input" type="submit" value="Отправить заявку">
+        <input class="button button--input" onclick="validateForm(this.form)" type="submit" value="Отправить заявку">
         <div class="form-page__legend-block">
           <p class="form-page__legend-text">* — Обязатaельные поля</p>
         </div>
@@ -157,13 +145,12 @@
         </address>
       </div>
     </div>
-    <div class="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14121.215946950684!2d-82.63213735!3d27.76960615!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1516384361540" height="364" style="border:0; width:100%" allowfullscreen></iframe>
+    <div id="map" class="page-footer__map">
     </div>
     <div class="page-footer__bottom-wrapper">
-      <a href="/" class="page-footer__brand-name">
+      <a href="index.html" class="page-footer__brand-name">
         <svg class="page-footer__brand-name-icon" width="128" height="24">
-          <use xlink:href="index.html#brand-name"></use>
+          <use xlink:href="#icon-logo-footer"></use>
         </svg>
       </a>
       <div class="page-footer__social social">
@@ -171,21 +158,21 @@
           <li class="social__item">
             <a href="#" class="social__link social__link--vk" aria-label="Переход на сайт vk.com">
               <svg class="social__vk-icon" width="22" height="13">
-                <use xlink:href="index.html#icon-vk"></use>
+                <use xlink:href="#icon-vk"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a href="#" class="social__link social__link--insta" aria-label="Переход на сайт instagram.com">
               <svg class="social__insta-icon" width="16" height="16">
-                <use xlink:href="index.html#icon-insta"></use>
+                <use xlink:href="#icon-insta"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a href="#" class="social__link social__link--fb" aria-label="Переход на сайт fb.com">
               <svg class="social__fb-icon" width="10" height="20">
-                <use xlink:href="index.html#icon-fb"></use>
+                <use xlink:href="#icon-fb"></use>
               </svg>
             </a>
           </li>
@@ -195,13 +182,15 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на сайт в HTML Academy">
           HTMLAcademy
           <svg class="copyright__icon" width="41" height="42">
-            <use xlink:href="index.html#htmlacademy-icon"></use>
+            <use xlink:href="#icon-logo-htmlacademy"></use>
           </svg>
         </a>
       </div>
     </div>
   </footer>
-  <script src="/js/main.js"></script>
+  <script src="js/main.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvuJ9ixRv7zv7DHJtDoVIbEct4H9sOIsE&callback=initMap">
+  </script>
 </body>
 
 </html>
