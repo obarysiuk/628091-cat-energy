@@ -10,8 +10,11 @@
 </head>
 
 <body>
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="page-header page-header--nojs">
-    <a href="/" class="logo page-header__logo">
+    <a href="index.html" class="logo page-header__logo">
       <picture>
         <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
         <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -36,7 +39,7 @@
     <nav class="main-nav page-header__main-nav main-nav--closed">
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a href="/">Главная</a>
+          <a href="index.html">Главная</a>
         </li>
         <li class="main-nav__item main-nav__item--active">
           <a>Каталог продукции</a>
@@ -416,9 +419,9 @@
     <div id="map" class="page-footer__map">
     </div>
     <div class="page-footer__bottom-wrapper">
-      <a href="/" class="page-footer__brand-name">
+      <a href="index.html" class="page-footer__brand-name">
         <svg class="page-footer__brand-name-icon" width="128" height="24">
-          <use xlink:href="index.html#brand-name"></use>
+          <use xlink:href="#icon-logo-footer"></use>
         </svg>
       </a>
       <div class="page-footer__social social">
@@ -426,21 +429,21 @@
           <li class="social__item">
             <a href="#" class="social__link social__link--vk" aria-label="Переход на сайт vk.com">
               <svg class="social__vk-icon" width="22" height="13">
-                <use xlink:href="index.html#icon-vk"></use>
+                <use xlink:href="#icon-vk"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a href="#" class="social__link social__link--insta" aria-label="Переход на сайт instagram.com">
               <svg class="social__insta-icon" width="16" height="16">
-                <use xlink:href="index.html#icon-insta"></use>
+                <use xlink:href="#icon-insta"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a href="#" class="social__link social__link--fb" aria-label="Переход на сайт fb.com">
               <svg class="social__fb-icon" width="10" height="20">
-                <use xlink:href="index.html#icon-fb"></use>
+                <use xlink:href="#icon-fb"></use>
               </svg>
             </a>
           </li>
@@ -450,14 +453,13 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на сайт в HTML Academy">
           HTMLAcademy
           <svg class="copyright__icon" width="41" height="42">
-            <use xlink:href="index.html#htmlacademy-icon"></use>
+            <use xlink:href="#icon-logo-htmlacademy"></use>
           </svg>
         </a>
-
       </div>
     </div>
   </footer>
-  <script src="/js/main.js"></script>
+  <script src="js/main.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvuJ9ixRv7zv7DHJtDoVIbEct4H9sOIsE&callback=initMap">
   </script>
 </body>
