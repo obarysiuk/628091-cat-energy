@@ -50,7 +50,7 @@ module.exports = function(grunt) {
           {
             expand: true,
             cwd: "source",
-            src: ["fonts/**/*.{woff,woff2}", "img/**", "js/**"],
+            src: ["fonts/**/*.{woff,woff2}", "img/**"],
             dest: "build"
           }
         ]
@@ -126,6 +126,31 @@ module.exports = function(grunt) {
           }
         ]
       }
+    },
+
+    htmlmin: {
+      html: {
+        options: {
+          removeComments: true,
+          collapseWhitespace: true
+        },
+        files: {
+          "build/index.html": "build/index.html",
+          "build/catalog.html": "build/catalog.html",
+          "build/form.html": "build/form.html"
+        }
+      }
+    },
+
+    uglify: {
+      my_target: {
+        files: {
+          "build/js/script.min.js": [
+            "source/js/main.js",
+            "source/js/picturefill.js"
+          ]
+        }
+      }
     }
   });
 
@@ -136,7 +161,9 @@ module.exports = function(grunt) {
     "less",
     "postcss",
     "csso",
+    "uglify",
     "svgstore",
-    "posthtml"
+    "posthtml",
+    "htmlmin"
   ]);
 };
