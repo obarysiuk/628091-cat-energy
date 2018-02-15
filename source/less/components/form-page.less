@@ -1,5 +1,6 @@
 .form-page {
   text-transform: uppercase;
+  display: block;
   overflow: hidden;
 }
 
@@ -27,7 +28,7 @@
 
 .form-page__form {
   width: 280px;
-  margin: 0 auto;
+  margin: 0 auto 32px auto;
 }
 
 .form-page__fieldset-info {
@@ -281,6 +282,7 @@
 
   .form-page__form {
     width: 708px;
+    margin-bottom: 72px;
   }
 
   .form-page__data-container {
@@ -414,22 +416,22 @@
     display: flex;
     align-items: baseline;
     width: 630px;
-    margin-bottom: 56px;
   }
 
   .form-page__legend-block {
-    margin-left: 64px;
+    align-self: flex-start;
+    margin: 15px 0 0 64px;
   }
 
   .form-page__legend-text {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 
 @media (min-width: 1300px) {
   .form-page__form {
     width: 1220px;
-    margin-bottom: 65px;
+    margin-bottom: 82px;
   }
 
   .form-page__title {
@@ -529,6 +531,7 @@
   }
 
   .form-page__legend-block {
-    margin-left: 85px;
+    align-self: flex-start;
+    margin: 15px 0 0 82px;
   }
 }

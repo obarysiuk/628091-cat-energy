@@ -11,25 +11,37 @@
 
 .page-header__brand-name {
   line-height: 0;
+  padding-right: 8px;
 }
 
 .page-header--nojs .main-nav--closed {
   display: block;
 }
 
+.page-header__btn {
+  border: 0;
+  background-color: transparent;
+}
+
 .page-header--nojs .page-header__btn {
-  fill: none;
+  opacity: 0;
 }
 
-.page-header__btn .icon-close {
+.page-header__icon-mobile-menu,
+.page-header__icon-close {
+  width: 24px;
+  height: 19px;
+}
+
+.page-header__btn .page-header__icon-close {
   display: none;
 }
 
-.page-header__btn.menu-opened .icon-menu {
+.page-header__btn.menu-opened .page-header__icon-mobile-menu {
   display: none;
 }
 
-.page-header__btn.menu-opened .icon-close {
+.page-header__btn.menu-opened .page-header__icon-close {
   display: block;
 }
 
